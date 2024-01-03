@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "media",
+        "1": "data (things)"
+    },
+    "description": "Files uploader plugin",
+    "image": "//meta-q.cdn.bubble.io/f1701792889590x603562159540647000/files_uploader.svg",
+    "license": "open_source",
+    "name": "Files Uploader"
+}

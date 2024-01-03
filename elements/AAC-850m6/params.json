@@ -1,0 +1,74 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "add_large_file_upload_properties": false,
+    "category": "input forms",
+    "default_dim": {
+        "height": 50,
+        "width": 200
+    },
+    "display": "Files Uploader",
+    "events": {
+        "AAH": {
+            "caption": "Upload Start",
+            "name": "uploadStart"
+        },
+        "AAJ": {
+            "caption": "Upload End",
+            "name": "uploadEnd"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "Multiple",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "multiple",
+            "rank": 0,
+            "value": "boolean"
+        },
+        "AAE": {
+            "caption": "Accept",
+            "default_val": "image/*",
+            "editor": "DynamicValue",
+            "name": "accept",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Website Home URL",
+            "editor": "DynamicValue",
+            "name": "websiteHomeUrl",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAI": {
+            "caption": "Files",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    return []\n\n}"
+            },
+            "is_list": true,
+            "name": "files",
+            "value": "file"
+        },
+        "AAK": {
+            "caption": "Is Uploading",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\treturn false;\n\n}"
+            },
+            "name": "isUploading",
+            "value": "boolean"
+        }
+    }
+}
